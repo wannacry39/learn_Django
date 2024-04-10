@@ -1,0 +1,43 @@
+body{
+    margin: 0;
+    font-family: 'Raleway', sans-serif;
+}
+
+
+.header{
+    background-image: url(images/mountains.jpg);
+    background-size: cover;
+    height: 100vh;
+}
+
+.nav-item{
+    color: white;
+    text-decoration: none;
+    margin-right: 60px;
+    font-size: 30px;
+}
+
+.nav-item:hover{
+    color: cadetblue
+}
+
+.nav-item:last-child{
+    margin-right: 0;
+}
+
+.nav{
+    display: flex;
+    justify-content: center;
+    padding-top: 30px;
+}
+
+.title{
+    color: white;
+    font-size: 80px;
+    width: 1000px;
+    text-align: center;
+
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 140px;
+}

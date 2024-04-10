@@ -4,8 +4,7 @@ from django.http import HttpResponse
 
 def index(request):
     context = {
-        'title': 'Home',
-        'content': 'Main page'
+        'title': 'Home'
     }
 
 
