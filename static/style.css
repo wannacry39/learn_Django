@@ -1,43 +1,88 @@
 body{
     margin: 0;
-    font-family: 'Raleway', sans-serif;
-}
-
-
-.header{
     background-image: url(images/mountains.jpg);
     background-size: cover;
-    height: 100vh;
+    background-repeat: no-repeat;
+    font-family: "Raleway";
+}
+
+.container{
+    margin: 0px 100px;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+.header-line{
+    padding-top: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
 }
 
 .nav-item{
-    color: white;
+    color: rgb(106, 186, 178);
     text-decoration: none;
-    margin-right: 60px;
-    font-size: 30px;
+    margin-right: 40px;
+    font-size: 25px;
 }
 
 .nav-item:hover{
-    color: cadetblue
+    color:  rgb(255, 255, 255);
 }
 
 .nav-item:last-child{
-    margin-right: 0;
+    margin-right: 0px;
 }
 
-.nav{
-    display: flex;
-    justify-content: center;
-    padding-top: 30px;
+.header-logo{
+    margin-right: 400px;
 }
 
-.title{
+.cart{
+    margin-left: 400px;
+}
+
+.header-title{
     color: white;
-    font-size: 80px;
-    width: 1000px;
+    font-size: 100px;
+    font-weight: 400;
     text-align: center;
+    padding: 0px 80px
 
-    margin-left: auto;
-    margin-right: auto;
-    margin-top: 140px;
+}
+
+.header-down{
+    margin-top: 110px;
+}
+
+.footer{
+    margin-top: auto;
+}
+
+.footer-line{
+    display: flex;
+    padding-bottom: 50px;
+    align-items: center;
+    justify-content: space-around;
+       
+}
+
+.link-item{
+    margin-right: 15px;
+    text-decoration: none;
+}
+
+.number{
+    color: white;
+    text-decoration: none;
+    font-family: Tahoma;
+    border-bottom: 1px white solid;
+    font-size: 20px;
+}
+
+.number:hover{
+    color: grey;
+    border-bottom: 1px grey solid;
 }

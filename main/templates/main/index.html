@@ -3,30 +3,56 @@
 <html lang="en">
 <head>
 	<meta charset="UTF-8">
-	<link rel ='stylesheet' href="{% static "style.css" %}">
+	<link rel="stylesheet" href="{% static "style.css" %}"
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<link rel="preconnect" href="https://fonts.googleapis.com">
 	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 	<link href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<title>{{ title }}</title>
 </head>
 <body>
-	
-	<div class="header">
-		<div class="nav">
-			<a class="nav-item" href="#">Home</a>
-			<a class="nav-item" href="#">About</a>
-			<a class="nav-item" href="#">Contact us</a>
-			<a class="nav-item" href="#">Catalog</a>
-		</div>
-
-		<div class="main">
-			<div class="title">
-				Logorithms: everything you've ever thought about
+	<div class="container">
+		<div class="header">
+			<div class="header-line">
+				<div class="header-logo">
+					<img src="{% static "images/logo.png" %}" width="50" height="50">
+				</div> 
+				<div class="nav">
+					<a class="nav-item" href="@">HOME</a>
+					<a class="nav-item" href="@">CATALOG</a>
+					<a class="nav-item" href="@">ABOUT</a>
+					<a class="nav-item" href="@">CONTACT US</a>
+				</div>
+				<div class="cart">
+					<a href="@">
+						<img src="{% static "images/cart.png" %}" width="40" height="40">
+					</a>
+				</div>
 			</div>
 		</div>
+		<div class="header-down">
+			<div class="header-title">
+				Logorithm: everything you've ever thought about
+			</div>
+		</div>
+		<footer class="footer">
+			<div class="footer-line">
+				<div class="link-icons">
+					<a class="link-item" href="@">
+						<img src="{% static "images/inst-icon.png" %}" width="40" height="40">
+					</a>
+					<a class="link-item" href="@">
+						<img src="{% static "images/x-logo.png" %}" width="35" height="35">
+					</a>
+					<a class="link-item" href="@">
+						<img src="{% static "images/tg-logo.png" %}"  width="40" height="40">
+					</a>	
+				</div>
+				<div class="number">
+					<a class="number" href="@">8-976-567-11-11</a>
+				</div>
+			</div>
+		</footer>
 	</div>
-
-	
 </body>
 </html>
