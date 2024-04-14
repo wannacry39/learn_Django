@@ -86,3 +86,26 @@ body{
     color: grey;
     border-bottom: 1px grey solid;
 }
+
+.text{
+    color: white;
+    font-size: 30px;
+    padding: 0px 30px;
+    text-align: justify;
+    
+
+}
+
+.text-bg{
+    background: linear-gradient(rgba(118, 150, 150, 0.2),rgba(39, 90, 86, 0.2));
+    margin: 40px 300px;
+    border-radius: 20px;
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    border: 1px solid rgba(255,255,255,0.18);
+    box-shadow: 0 8px 32px 0 black;
+
+    
+    
+     
+}
