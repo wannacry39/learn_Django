@@ -37,11 +37,39 @@
 				</div>
 			</div>
 		</div>
-		<div class="header-down">
-			<div class="header-title">
-				{{content}}
+		<div class="categories">
+			<div class="cat-list">
+				{% for category in categories %}
+					<a class="cat-link" href="#">{{category.name}}</a>
+				{% endfor %}
 			</div>
 		</div>
+		<div class="catalog">
+			{% for product in goods %}
+				<div class="good-card">
+					<div class="good-image">
+						<img src="{% static product.image %}" width="150">
+					</div>
+					
+					<div class="info">
+						<h3>{{ product.name }}</h3>
+						<div class="price-info">
+							<span class="price">
+								{{ product.price }}<small>₽</small>
+							</span>
+
+							<button class="add-to-cart">
+								<ion-icon name="cart"></ion-icon>
+							</button>
+						</div>
+					</div>
+				</div>
+			{% endfor %}
+		</div>
 	</div>
+
+
+
+	<script src="https://unpkg.com/ionicons@4.1.2/dist/ionicons.js"></script>
 </body>
 </html>

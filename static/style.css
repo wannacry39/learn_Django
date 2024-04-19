@@ -103,9 +103,119 @@ body{
     backdrop-filter: blur(10px);
     -webkit-backdrop-filter: blur(10px);
     border: 1px solid rgba(255,255,255,0.18);
-    box-shadow: 0 8px 32px 0 black;
+    box-shadow: 0 8px 32px 0 black;  
+}
 
+
+
+.catalog{
+    display: flex;
+    flex-wrap: wrap;
+    background-color: grey;
+    border-radius: 20px;
+    margin: 20px 125px;
+    padding-left: 24px;
+    padding-top: 20px;
+    background: linear-gradient(rgba(118, 150, 150, 0.2),rgba(39, 90, 86, 0.2));
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    border: 1px solid rgba(255,255,255,0.18);
+    box-shadow: 0 8px 32px 0 black;  
+}
+
+
+
+.good-card{
+    background-color: white;
+    width: 200px;
+    border-radius: 20px;
+    padding: 10px;
+    margin-right: 20px;
+    margin-bottom: 20px;
+}
+
+.good-card:last-child{
+    margin-right: 0px;
+}
+
+
+.good-image{
+    display: flex;
+    justify-content: center;
+    margin-top: 10px;
+}
+
+.info h3{
+    margin-top: 10px;
+    margin-bottom: 5px;
+    display: flex;
+    justify-content: center;
+    font-weight: 350;
+    font-family: Helvetica;
+}
+
+.price-info{
+    display: flex;
+    margin: 0px 20px;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.add-to-cart{
+    background-color: rgb(106, 186, 178);
+    border: none;
+    width: 36px;
+    height: 18px;
+    display: flex;
+    justify-content: center;
+    border-radius: 15px;
+
+}
+
+.info span{
+    font-family: Helvetica;
+    font-weight: 500;
+}
+
+.add-to-cart:hover{
+    background-color: rgb(25, 78, 73);
+}
+
+.categories{
     
+    margin: 50px 132px;
+    margin-bottom: 0px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
     
-     
+}
+
+.cat-list{
+    list-style: none;
+    display: flex;
+    border-radius: 20px;
+    margin: 0px; 
+    background-color: white;
+    padding: 5px;
+}
+
+
+.cat-link{
+    text-decoration: none;
+    color: black;
+    font-size: 15px;
+    font-weight: 600;
+    margin-right: 30px;
+    background-color: white;
+    border-radius: 20px;
+    transition: .3s;
+}
+
+.cat-link:last-child{
+    margin-right: 0px;
+}
+
+.cat-link:hover{
+    background-color: rgb(233, 233, 233);
 }
