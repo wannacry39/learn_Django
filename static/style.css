@@ -228,3 +228,73 @@ body{
 .cat-link:hover{
     background-color: rgb(233, 233, 233);
 }
+
+
+.prod-card{
+    background-color: white;
+    margin: 20px 200px;
+    border-radius: 20px;
+    padding: 40px;
+    border: 1px solid rgba(255,255,255,0.18);
+    box-shadow: 0 8px 32px 0 black;
+}
+
+.prod-image{
+    display: flex;
+    justify-content: center;
+}
+
+
+.prod-name{
+    font-family: Helvetica;
+    font-weight: 100;
+    font-size: 40px;
+}
+
+.prod-info{
+    font-family: Arial;
+    font-weight: lighter;
+    font-size: 30px;
+    text-align: justify;
+}
+
+.prod-id{
+    font-family: Arial;
+    font-weight: lighter;
+    font-size: 20px;
+    text-align: justify;
+    margin-bottom: 10px;
+    opacity: 0.7;
+}
+
+
+
+.prod-price span{
+    font-weight: 600;
+    font-size: 20px;
+}
+
+.prod-cart{
+    background-color: rgb(106, 186, 178);
+    border: none;
+    height: 48px;
+    width: 96px;
+    justify-content: center;
+    border-radius: 15px;
+    transition: 0.3s;
+}
+
+.lower-info{
+    display: flex;
+    text-align: center;
+    justify-content: space-between;
+}
+
+.prod-cart:hover{
+    background-color: rgb(25, 78, 73);
+}
+
+.card-link{
+    display: none;
+    text-decoration: none;
+}
