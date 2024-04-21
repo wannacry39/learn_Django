@@ -27,7 +27,7 @@
 				</div> 
 				<div class="nav">
 					<a class="nav-item" href="{% url "main:index" %}">HOME</a>
-					<a class="nav-item" href="{% url "catalog:index" %}">CATALOG</a>
+					<a class="nav-item" href="{% url "catalog:index" 'all' %}">CATALOG</a>
 					<a class="nav-item" href="{% url "main:about" %}">ABOUT</a>
 					<a class="nav-item" href="@">CONTACT US</a>
 				</div>
@@ -42,7 +42,7 @@
 			<div class="cat-list">
 				{% tag_categories as categories %}
 				{% for category in categories %}
-					<a class="cat-link" href="#">{{category.name}}</a>
+					<a class="cat-link" href="{% url "catalog:index" category.slug %}">{{ category.name }}</a>
 				{% endfor %}
 			</div>
 		</div>
