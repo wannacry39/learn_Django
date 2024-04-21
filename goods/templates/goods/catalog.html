@@ -48,20 +48,23 @@
 			{% for product in goods %}
 				<div class="good-card">
 					<div class="good-image">
-						<img src="{% static product.image %}" width="150">
+						{% if product.image %}
+							<img src="{{ product.image.url }}" height="150">
+						{% endif %}
 					</div>
 					
 					<div class="info">
-						<h3>{{ product.name }}</h3>
-						<div class="price-info">
-							<span class="price">
-								{{ product.price }}<small>₽</small>
-							</span>
+						<h3>{{ product.name }}</h3>	
+					</div>
 
-							<button class="add-to-cart">
-								<ion-icon name="cart"></ion-icon>
-							</button>
-						</div>
+					<div class="price-info">
+						<span class="price">
+							{{ product.price }}<small>₽</small>
+						</span>
+
+						<button class="add-to-cart">
+							<ion-icon name="cart"></ion-icon>
+						</button>
 					</div>
 				</div>
 			{% endfor %}

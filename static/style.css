@@ -113,15 +113,16 @@ body{
     flex-wrap: wrap;
     background-color: grey;
     border-radius: 20px;
-    margin: 20px 125px;
-    padding-left: 24px;
-    padding-top: 20px;
+    margin: 20px 230px;
+    padding: 20px 60px;
     background: linear-gradient(rgba(118, 150, 150, 0.2),rgba(39, 90, 86, 0.2));
     backdrop-filter: blur(10px);
     -webkit-backdrop-filter: blur(10px);
     border: 1px solid rgba(255,255,255,0.18);
     box-shadow: 0 8px 32px 0 black;  
+    position: relative;
 }
+
 
 
 
@@ -129,26 +130,25 @@ body{
     background-color: white;
     width: 200px;
     border-radius: 20px;
-    padding: 10px;
-    margin-right: 20px;
-    margin-bottom: 20px;
+    padding: 20px;
+    margin: 20px; 
+    text-align: center;
+    position: relative;
 }
 
-.good-card:last-child{
-    margin-right: 0px;
-}
 
 
 .good-image{
     display: flex;
     justify-content: center;
-    margin-top: 10px;
+    
+   
 }
 
+
 .info h3{
-    margin-top: 10px;
-    margin-bottom: 5px;
     display: flex;
+    text-align: center;
     justify-content: center;
     font-weight: 350;
     font-family: Helvetica;
@@ -156,9 +156,13 @@ body{
 
 .price-info{
     display: flex;
-    margin: 0px 20px;
     justify-content: space-between;
     align-items: center;
+    position: absolute;
+    bottom: 10px;
+    left: 20px;
+    right: 20px;
+
 }
 
 .add-to-cart{
@@ -170,6 +174,11 @@ body{
     justify-content: center;
     border-radius: 15px;
 
+}
+
+.price{
+    font-family: Helvetica;
+    font-weight: 400;
 }
 
 .info span{

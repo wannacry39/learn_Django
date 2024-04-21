@@ -1,5 +1,5 @@
 from django.shortcuts import render
-from goods.models import Categories
+from goods.models import Categories, Products
 
 # Create your views here.
 
@@ -7,58 +7,11 @@ from goods.models import Categories
 def catalog(request):
 
     categories = Categories.objects.all()
+    goods = Products.objects.all()
 
     context = {
         "title": "Catalog",
-        "goods": [
-            {
-                'image': 'images/goods-imgs/iphone15.webp',
-                'name' : 'IPhone 15',
-                'price' : '100000'
-            },
-            {
-                'image': 'images/goods-imgs/iphone15.webp',
-                'name' : 'IPhone 15',
-                'price' : '100000'
-            },
-            {
-                'image': 'images/goods-imgs/iphone15.webp',
-                'name' : 'IPhone 15',
-                'price' : '100000'
-            },
-            {
-                'image': 'images/goods-imgs/iphone15.webp',
-                'name' : 'IPhone 15',
-                'price' : '100000'
-            },
-            {
-                'image': 'images/goods-imgs/iphone15.webp',
-                'name' : 'IPhone 15',
-                'price' : '100000'
-            },
-            {
-                'image': 'images/goods-imgs/iphone15.webp',
-                'name' : 'IPhone 15',
-                'price' : '100000'
-            },
-            {
-                'image': 'images/goods-imgs/iphone15.webp',
-                'name' : 'IPhone 15',
-                'price' : '100000'
-            },
-            {
-                'image': 'images/goods-imgs/iphone15.webp',
-                'name' : 'IPhone 15',
-                'price' : '100000'
-            },
-            {
-                'image': 'images/goods-imgs/iphone15.webp',
-                'name' : 'IPhone 15',
-                'price' : '100000'
-            },
-            
-
-        ],
+        "goods": goods,
         "categories": categories
     }
     return render(request, 'goods/catalog.html', context)
